@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PaymentActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Payment Methods"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Place Name -->
+    <TextView
+        android:id="@+id/place_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Country Name -->
+    <TextView
+        android:id="@+id/country_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/place_name_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Payment Method 1: Gopay -->
+    <LinearLayout
+        android:id="@+id/with_gopay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/country_name_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/btn_gopay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/gopay"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gopay"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Payment Method 2: ShopeePay -->
+    <LinearLayout
+        android:id="@+id/with_spay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/with_gopay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp">
+
+        <RadioButton
+            android:id="@+id/btn_spay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/shopeepay"
+            android:contentDescription="ShopeePay Icon"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ShopeePay"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Payment Method 3: OVO -->
+    <LinearLayout
+        android:id="@+id/with_ovo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/with_spay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp">
+
+        <RadioButton
+            android:id="@+id/btn_ovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ovo"
+            android:contentDescription="OVO Icon"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OVO"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Price Label -->
+    <TextView
+        android:id="@+id/price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/proceed_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Proceed Button -->
+    <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Lanjutkan Pembayaran"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

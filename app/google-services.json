@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "874642816226",
+    "project_id": "vacationapp-d13fa",
+    "firebase_url": "https://vacationapp-d13fa-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "storage_bucket": "vacationapp-d13fa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874642816226:android:3fc66d4676182aadfb32bb",
+        "android_client_info": {
+          "package_name": "com.example.travelbooking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAMTWVLZKwDq7dbZmrmLmPw4O4iNGEBiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

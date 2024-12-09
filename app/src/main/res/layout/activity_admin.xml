@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etPlaceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Place Name" />
+
+    <EditText
+        android:id="@+id/etCountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country Name" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/place_categories" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+         />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnAddPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Place"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnViewPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="View Place"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"/>
+</LinearLayout>

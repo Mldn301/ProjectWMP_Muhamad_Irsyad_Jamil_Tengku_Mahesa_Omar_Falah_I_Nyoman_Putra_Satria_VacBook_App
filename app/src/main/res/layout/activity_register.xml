@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/hijau">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Account"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/etEmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@drawable/white_background"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/white_background"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
